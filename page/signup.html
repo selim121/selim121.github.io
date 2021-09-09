@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign Up</title>
+            <link rel="stylesheet" href="css/signup.css">
+           <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <form action="submitted.html" method="GET">
+            <h1>Sign-Up form</h1>
+            <fieldset>
+                <label for="name">Full Name: </label>
+                <input type="text" name="FullName" required autofocus placeholder="Enter your name">
+                <br><br>
+                <label for="username">Username: </label>
+                <input type="text" name="username" id="username" required placeholder="Enter your Username">
+                <label for="Email">E-mail: </label>
+                <input type="email" name="Email" id="Email" required placeholder="Enter your E-Mail ID">
+                <br><br>
+                <label for="Phone">Phone Number: </label>
+                <input type="tel" name="Number" id="Phone" required placeholder="Enter your Phone Number">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" min="6" max="16" required placeholder="Choose Password" title="Please enter valid password">
+                <br><br>
+                <label for="birthday">Birthday: </label>
+                <input type="date" name="birthday">
+                <label for="gender">Gender: </label>
+                <select name="Gender" id="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Consider not to say">Consider Not to Say</option>
+                </select>
+                <br><br>
+            </fieldset>
+            <button type="submit">Sign Up</button>
+    </body>
+</html>
